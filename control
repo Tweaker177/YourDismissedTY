@@ -1,7 +1,7 @@
 Package: com.i0stweak3r.yourdismissedthankyou
 Name: YourDismissedTY
 Author: i0s_tweak3r
-Description: Hides a common type of view system wide.
+Description: Adda a cancel button to all UIAlerts that dont have one already, or a cancel action at least.  works on iOS 9-17
 Depends: mobilesubstrate
 Maintainer: i0s_tweak3r <djvs23@gmail.com>
 Architecture: iphoneos-arm64
