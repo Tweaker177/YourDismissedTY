@@ -7,10 +7,11 @@
 		<key>Bundles</key>
 		<array>
 			<string>com.apple.UIKit</string>
-			<string>UIAlertController</string>
-			<string>UIAlertAction</string>
-			<string>UITextField</string>
-		</array>
+                </array>
+                <key>Classes</key>
+                 <array>
+	    		<string>UIAlertController</string>
+                 </array>	
 	</dict>
 </dict>
 </plist>
