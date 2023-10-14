@@ -17,8 +17,10 @@ static bool kEnabled = YES;
 if(!kEnabled) { return %orig; }
         
 // Check if "Cancel" action is already present
-    for (UIAlertAction *action in originalController.actions) {
-        if ([action.title isEqualToString:@"Cancel"]) {
+    for (UIAlertAction *action in [originalController actions]) {
+           if ((action.style==1) || ([action.title isEqualToString:@"Cancel"])) {
+// I'm guessing 1 = UIAlertActionStyleCancel in the enumeration and  0=default
+//need to check this, but it works without issue so far in my testing
             cancelActionExists = YES;
             break;
         }
@@ -26,8 +28,10 @@ if(!kEnabled) { return %orig; }
     
     // If "Cancel" action is not present, add it
     if (!cancelActionExists) {
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-            // Dismiss the UIAlertController here
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//Using cancel action style caused crash in cases where the Cancel action wasn't detected already
+
+// Dismiss the UIAlertController here
             [originalController dismissViewControllerAnimated:YES completion:nil];
         }];
         
