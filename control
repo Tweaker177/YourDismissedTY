@@ -6,5 +6,5 @@ Depends: mobilesubstrate
 Maintainer: i0s_tweak3r <djvs23@gmail.com>
 Architecture: iphoneos-arm64
 Section: Tweaks
-Version: 0.0.1r
+Version: 0.0.2r
 
