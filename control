@@ -1,7 +1,7 @@
 Package: com.i0stweak3r.yourdismissedthankyou
 Name: YourDismissedTY
 Author: i0s_tweak3r
-Description: Adda a cancel button to all UIAlerts that dont have one already, or a cancel action at least.  works on iOS 9-17
+Description: Adda a cancel button to all UIAlerts that dont have one already, or a cancel action at least.  Works on iOS 9-17. This build is for ROOTLESS jailbreaks.  Separate package will be in my repo for rootful.
 Depends: mobilesubstrate
 Maintainer: i0s_tweak3r <djvs23@gmail.com>
 Architecture: iphoneos-arm64
