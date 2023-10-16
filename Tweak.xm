@@ -19,8 +19,7 @@ if(!kEnabled) { return %orig; }
 // Check if "Cancel" action is already present
     for (UIAlertAction *action in [originalController actions]) {
            if ((action.style==1) || ([action.title isEqualToString:@"Cancel"])) {
-// I'm guessing 1 = UIAlertActionStyleCancel in the enumeration and  0=default
-//need to check this, but it works without issue so far in my testing
+// 1 = UIAlertActionStyleCancel in the enumeration and  0=default. 2= destructive style
             cancelActionExists = YES;
             break;
         }
